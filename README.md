@@ -16,3 +16,5 @@ With this project i learned:
 - More vocabulary in english (english is not my main language but i did the course in english anyway)
 
 The [link](https://omnifood-jmv.netlify.app/) to the page and a screenshot:
+
+![alt text](https://github.com/Jair-MV/Omnifood/blob/main/omnifood-screenshot.png)
