@@ -35,8 +35,8 @@
     --fs-base: 1.6rem;
 
     --fs-giga: ;
-    --fs-mega: ;
-    --fs-kilo: ;
+    --fs-mega: 2rem;
+    --fs-kilo: 1.8rem;
 
     --fs-milli: ;
     --fs-micro: ;
@@ -111,6 +111,39 @@ input {
 
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    font-size: 2rem;
+    font-weight: 600;
+
+    transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: hsl(var(--clr-primary));
+    color: hsl(var(--clr-ntrl-max));
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: hsl(var(--clr-primary-dk));
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: hsl(var(--clr-ntrl-max));
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: hsl(27, 83%, 95%);
+    box-shadow: inset 0 0 0 3px hsl(var(--clr-ntrl-max));
 }
 
 /* *********************************** */
