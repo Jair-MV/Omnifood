@@ -7,7 +7,7 @@
     --clr-ntrl-min: 0 0% 0%; /* hsl(0 0% 0%) */
     --clr-ntrl-max: 0 0% 100%; /* hsl(0 0% 100%) */
 
-    --clr-base: 0 0% 40%; /* hsl(0 0% 30%) */
+    --clr-base: 0 0% 30%; /* hsl(0 0% 30%) */
     --clr-base-lt: 0 0% 60%; /* hsl(0 0% 60%) */
     --clr-base-dk: 0 0% 20%; /* hsl(0 0% 20%) */
 
@@ -17,7 +17,7 @@
     --clr-primary-ltr: ;
     --clr-primary-ltst: ;
 
-    --clr-primary-dk: ;
+    --clr-primary-dk: 28, 74%, 47%; /* hsl(28, 74%, 47%) */
     --clr-primary-dkr: ;
     --clr-primary-dkst: ;
 
@@ -42,7 +42,7 @@
     --fs-micro: ;
     --fs-nano: ;
 
-    --ff-base: sans-serif;
+    --ff-base: "Rubik", sans-serif;
     --ff-alt-alpha: ;
     --ff-alt-beta: ;
     --ff-icon: ;
@@ -76,7 +76,7 @@ body {
     font-size: var(--fs-base);
     font-weight: 400;
     line-height: 1;
-    color: var(--clr-base);
+    color: hsl(var(--clr-base));
 }
 
 img,
@@ -111,4 +111,11 @@ input {
 
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+/* *********************************** */
+/* UTILITIES */
+/* *********************************** */
+.u-mg-right-sm {
+    margin-right: 1.6rem !important;
 }
