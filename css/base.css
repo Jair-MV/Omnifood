@@ -1,0 +1,114 @@
+/* *********************************** */
+/* CUSTOM PROPERTIES */
+/* *********************************** */
+
+:root {
+    /* Color */
+    --clr-ntrl-min: 0 0% 0%; /* hsl(0 0% 0%) */
+    --clr-ntrl-max: 0 0% 100%; /* hsl(0 0% 100%) */
+
+    --clr-base: 0 0% 40%; /* hsl(0 0% 30%) */
+    --clr-base-lt: 0 0% 60%; /* hsl(0 0% 60%) */
+    --clr-base-dk: 0 0% 20%; /* hsl(0 0% 20%) */
+
+    --clr-primary: 28, 80%, 52%; /* hsl(28, 80%, 52%) */
+
+    --clr-primary-lt: ;
+    --clr-primary-ltr: ;
+    --clr-primary-ltst: ;
+
+    --clr-primary-dk: ;
+    --clr-primary-dkr: ;
+    --clr-primary-dkst: ;
+
+    --clr-secondary: ;
+
+    --clr-secondary-lt: ;
+    --clr-secondary-ltr: ;
+    --clr-secondary-ltst: ;
+
+    --clr-secondary-dk: ;
+    --clr-secondary-dkr: ;
+    --clr-secondary-dkst: ;
+
+    /* Font */
+    --fs-base: 1.6rem;
+
+    --fs-giga: ;
+    --fs-mega: ;
+    --fs-kilo: ;
+
+    --fs-milli: ;
+    --fs-micro: ;
+    --fs-nano: ;
+
+    --ff-base: sans-serif;
+    --ff-alt-alpha: ;
+    --ff-alt-beta: ;
+    --ff-icon: ;
+
+    /* Other */
+    --container-width: 120rem; /* 114rem */
+}
+
+/* ***************************** */
+/* CANVAS */
+/* ***************************** */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-base);
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    color: inherit;
+}
+
+/* *********************************** */
+/* COMPONENTS */
+/* *********************************** */
+.container {
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
