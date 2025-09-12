@@ -442,7 +442,7 @@
 /* Pricing */
 /* *********************************** */
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -517,4 +517,75 @@
 .cta-form *:focus {
     outline: none;
     box-shadow: 0 0 0 0.8rem hsl(27 83% 95% / 0.5);
+}
+
+/* *********************************** */
+/* Footer */
+/* *********************************** */
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 6.4rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    margin-bottom: 3.2rem;
+}
+
+.social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: hsl(0, 0%, 46%);
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.footer-heading {
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.contacts {
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    color: hsl(0, 0%, 46%);
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: hsl(0, 0%, 33%);
 }
