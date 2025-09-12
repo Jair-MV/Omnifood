@@ -11,13 +11,13 @@
     --clr-base-lt: 0 0% 60%; /* hsl(0 0% 60%) */
     --clr-base-dk: 0 0% 20%; /* hsl(0 0% 20%) */
 
-    --clr-primary: 28, 80%, 52%; /* hsl(28, 80%, 52%) */
+    --clr-primary: 28 80% 52%; /* hsl(28, 80%, 52%) */
 
     --clr-primary-lt: ;
     --clr-primary-ltr: ;
     --clr-primary-ltst: ;
 
-    --clr-primary-dk: 28, 74%, 47%; /* hsl(28, 74%, 47%) */
+    --clr-primary-dk: 28 74% 47%; /* hsl(28, 74%, 47%) */
     --clr-primary-dkr: ;
     --clr-primary-dkst: ;
 
@@ -97,7 +97,8 @@ a {
     color: inherit;
 }
 
-input {
+input,
+select {
     color: inherit;
 }
 strong {
@@ -176,14 +177,17 @@ strong {
     color: hsl(var(--clr-primary-dk));
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
     padding: 1.6rem 3.2rem;
+    border: none;
     border-radius: 9px;
     font-size: 2rem;
     font-weight: 600;
 
+    cursor: pointer;
     transition: all 0.3s;
 }
 
@@ -207,6 +211,20 @@ strong {
 .btn--outline:active {
     background-color: hsl(27, 83%, 95%);
     box-shadow: inset 0 0 0 3px hsl(var(--clr-ntrl-max));
+}
+
+.btn--form {
+    align-self: end;
+    padding: 1.2rem;
+    background-color: hsl(28, 75%, 15%);
+    font-size: 1.8rem;
+    line-height: normal;
+    color: hsl(27, 83%, 95%);
+}
+
+.btn--form:hover {
+    background-color: hsl(var(--clr-ntrl-max));
+    color: hsl(0, 0%, 33%);
 }
 
 .link:link,
@@ -241,6 +259,11 @@ strong {
     width: 3rem;
     height: 3rem;
     color: hsl(var(--clr-primary));
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem hsl(var(--clr-primary) / 0.5);
 }
 
 /* *********************************** */
