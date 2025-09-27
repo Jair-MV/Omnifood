@@ -52,7 +52,7 @@ This project is a fictional landing page developed as part of an HTML and CSS co
 
 ## Author
 
--   GitHub - [jmv-dev](https://github.com/JairMV)
+-   GitHub - [Jair-MV](https://github.com/Jair-MV)
 
 ## Acknowledgments
 
