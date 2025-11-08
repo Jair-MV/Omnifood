@@ -23,8 +23,8 @@ This project is a fictional landing page developed as part of an HTML and CSS co
 
 ### Links
 
--   Solution URL: [https://github.com/jmv-dev/Omnifood](https://github.com/jmv-dev/Omnifood)
--   Live Site URL: [https://omnifood-jmv.netlify.app/](https://omnifood-jmv.netlify.app/)
+-   Solution URL: [https://github.com/Jair-MV/Omnifood](https://github.com/Jair-MV/Omnifood)
+-   Live Site URL: [https://omnifood-jmv-mx.netlify.app/](https://omnifood-jmv-mx.netlify.app/)
 
 ## My process
 
