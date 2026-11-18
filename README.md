@@ -16,7 +16,7 @@ Open `index.html` in your browser. No dependencies or build step required.
 - Includes a responsive mobile menu and respects reduced-motion preferences.
 - The sign-up form validates inputs in the browser but does not send or store data.
 
-See the [style guide](Style%20guide/index.html) for colors, typography, and component examples.
+See the [style guide](style%20guide/index.html) for colors, typography, and component examples.
 
 ## Credits
 
