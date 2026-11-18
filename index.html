@@ -76,11 +76,7 @@
                 <ul class="header__list">
                     <!-- Add href values once the destination sections exist. -->
                     <li>
-                        <a
-                            class="header__link"
-                            role="link"
-                            aria-disabled="true"
-                        >
+                        <a class="header__link" href="#how-it-works">
                             How it works
                         </a>
                     </li>
@@ -139,7 +135,7 @@
                         </p>
 
                         <div class="hero__actions">
-                            <!-- Link these CTAs once the sign-up and how-it-works sections exist. -->
+                            <!-- Link the primary CTA once the sign-up section exists. -->
                             <button
                                 class="hero__action hero__action--primary"
                                 type="button"
@@ -147,13 +143,12 @@
                             >
                                 Start eating well
                             </button>
-                            <button
+                            <a
                                 class="hero__action hero__action--secondary"
-                                type="button"
-                                aria-disabled="true"
+                                href="#how-it-works"
                             >
                                 Learn more <span aria-hidden="true">↓</span>
-                            </button>
+                            </a>
                         </div>
 
                         <div class="hero__proof">
@@ -218,6 +213,153 @@
                         alt="A woman enjoying a meal beside a collage of prepared dishes"
                         fetchpriority="high"
                     />
+                </div>
+            </section>
+
+            <section class="featured" aria-labelledby="featured-title">
+                <div class="featured__inner">
+                    <h2 class="featured__title" id="featured-title">
+                        As featured in
+                    </h2>
+                    <ul class="featured__logos" role="list">
+                        <li>
+                            <img
+                                class="featured__logo"
+                                src="assets/logos/techcrunch.png"
+                                width="562"
+                                height="80"
+                                alt="TechCrunch"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                class="featured__logo"
+                                src="assets/logos/business-insider.png"
+                                width="252"
+                                height="80"
+                                alt="Business Insider"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                class="featured__logo"
+                                src="assets/logos/the-new-york-times.png"
+                                width="609"
+                                height="80"
+                                alt="The New York Times"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                class="featured__logo"
+                                src="assets/logos/forbes.png"
+                                width="306"
+                                height="80"
+                                alt="Forbes"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                class="featured__logo"
+                                src="assets/logos/usa-today.png"
+                                width="428"
+                                height="80"
+                                alt="USA Today"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section
+                class="how"
+                id="how-it-works"
+                aria-labelledby="how-title"
+                tabindex="-1"
+            >
+                <div class="how__inner">
+                    <p class="how__eyebrow">How it works</p>
+                    <h2 class="how__title" id="how-title">
+                        Your daily dose of health in 3 simple steps
+                    </h2>
+
+                    <ol class="how__steps" role="list">
+                        <li class="how__step">
+                            <div class="how__copy">
+                                <p class="how__number" aria-hidden="true">01</p>
+                                <h3 class="how__step-title">
+                                    Tell us what you like (and what not)
+                                </h3>
+                                <p class="how__description">
+                                    Never again waste time thinking about what
+                                    to eat! Omnifood AI will create a 100%
+                                    personalized weekly meal plan just for you.
+                                    It makes sure you get all the nutrients and
+                                    vitamins you need, no matter what diet you
+                                    follow!
+                                </p>
+                            </div>
+                            <div class="how__visual">
+                                <img
+                                    class="how__screen"
+                                    src="assets/app/app-screen-1.png"
+                                    width="400"
+                                    height="809"
+                                    loading="lazy"
+                                    alt="Dietary preferences screen in the Omnifood app"
+                                />
+                            </div>
+                        </li>
+                        <li class="how__step">
+                            <div class="how__copy">
+                                <p class="how__number" aria-hidden="true">02</p>
+                                <h3 class="how__step-title">
+                                    Approve your weekly meal plan
+                                </h3>
+                                <p class="how__description">
+                                    Once per week, approve the meal plan
+                                    generated for you by Omnifood AI. You can
+                                    change ingredients, swap entire meals, or
+                                    even add your own recipes.
+                                </p>
+                            </div>
+                            <div class="how__visual">
+                                <img
+                                    class="how__screen"
+                                    src="assets/app/app-screen-2.png"
+                                    width="400"
+                                    height="809"
+                                    loading="lazy"
+                                    alt="Weekly meal plan approval screen in the Omnifood app"
+                                />
+                            </div>
+                        </li>
+                        <li class="how__step">
+                            <div class="how__copy">
+                                <p class="how__number" aria-hidden="true">03</p>
+                                <h3 class="how__step-title">
+                                    Receive meals at a convenient time
+                                </h3>
+                                <p class="how__description">
+                                    The best chefs in town will cook your
+                                    selected meal every day, and we will deliver
+                                    it to your door whenever works best for you.
+                                    You can change your delivery schedule and
+                                    address daily!
+                                </p>
+                            </div>
+                            <div class="how__visual">
+                                <img
+                                    class="how__screen"
+                                    src="assets/app/app-screen-3.png"
+                                    width="400"
+                                    height="809"
+                                    loading="lazy"
+                                    alt="Delivery scheduling screen in the Omnifood app"
+                                />
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </section>
         </main>

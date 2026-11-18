@@ -23,6 +23,24 @@ headerToggle.addEventListener("click", () => {
     setMenuOpen(!isOpen);
 });
 
+document.querySelector(".header__nav").addEventListener("click", (event) => {
+    const link = event.target.closest('a[href^="#"]');
+
+    if (
+        !link ||
+        headerToggle.getAttribute("aria-expanded") !== "true" ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+    ) {
+        return;
+    }
+
+    setMenuOpen(false);
+    document.getElementById(link.hash.slice(1))?.focus({ preventScroll: true });
+});
+
 document.addEventListener("keydown", (event) => {
     if (
         event.key === "Escape" &&

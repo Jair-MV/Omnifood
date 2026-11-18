@@ -10,9 +10,12 @@
     --clr-base: 0 0% 33%;
     --clr-primary: 28 80% 52%;
     --clr-cream: 27 83% 95%;
+    --clr-tint: 28 80% 90%;
     --clr-shade: 28 74% 47%;
     --clr-heading: 0 0% 20%;
     --clr-brown: 28 75% 15%;
+    --clr-muted: 0 0% 53%;
+    --clr-step-number: 0 0% 87%;
     --clr-neutral-max: 0 0% 100%;
 
     --fs-base: 1.6rem;
