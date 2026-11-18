@@ -831,3 +831,221 @@
         }
     }
 }
+
+/* ********************************************* */
+/* Pricing                                       */
+/* ********************************************* */
+.pricing {
+    padding: clamp(4.8rem, 7vw, 9.6rem) 0;
+}
+
+.pricing__inner {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 clamp(2rem, 6vw, 3.2rem);
+}
+
+.pricing__eyebrow {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    letter-spacing: 0.075rem;
+    color: hsl(var(--clr-shade));
+    text-transform: uppercase;
+}
+
+.pricing__title {
+    margin-bottom: clamp(4.8rem, 7vw, 9.6rem);
+
+    font-size: clamp(2.8rem, 4.5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+    color: hsl(var(--clr-heading));
+}
+
+.pricing__plans {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 41rem));
+    justify-content: center;
+    gap: clamp(2.4rem, 5vw, 6.4rem);
+
+    @media (width <= 40em) {
+        grid-template-columns: minmax(0, 41rem);
+    }
+}
+
+.pricing__plan {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: clamp(2.4rem, 4vw, 4.6rem);
+
+    border: 2px solid hsl(var(--clr-cream));
+    border-radius: var(--radius-card);
+}
+
+.pricing__plan--complete {
+    background-color: hsl(var(--clr-cream));
+    overflow: hidden;
+}
+
+.pricing__ribbon {
+    position: absolute;
+    top: 2.7rem;
+    right: -4.7rem;
+
+    width: 17rem;
+    padding: 0.8rem 0;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(var(--clr-heading));
+    text-transform: uppercase;
+
+    background-color: hsl(var(--clr-paleo));
+    transform: rotate(45deg);
+}
+
+.pricing__plan-heading {
+    margin-bottom: clamp(3.2rem, 4vw, 4.8rem);
+
+    text-align: center;
+}
+
+.pricing__plan-name {
+    margin-bottom: 3.2rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.075rem;
+    color: hsl(var(--clr-shade));
+    text-transform: uppercase;
+}
+
+.pricing__price {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(4.8rem, 6vw, 6.2rem);
+    font-weight: 600;
+    color: hsl(var(--clr-heading));
+}
+
+.pricing__currency {
+    margin-right: 0.8rem;
+
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.pricing__price-note,
+.pricing__details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.pricing__perks {
+    display: grid;
+    gap: 1.6rem;
+
+    margin-bottom: clamp(3.2rem, 4vw, 4.8rem);
+}
+
+.pricing__perk {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.pricing__perk strong {
+    font-weight: 600;
+}
+
+.pricing__mark {
+    flex: 0 0 2.4rem;
+
+    font-size: 2.4rem;
+    line-height: 1;
+    text-align: center;
+    color: hsl(var(--clr-primary));
+}
+
+.pricing__action {
+    align-self: center;
+
+    margin-top: auto;
+    padding: 1.4rem 2.4rem;
+
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-weight: 600;
+    line-height: 1.35;
+    color: hsl(var(--clr-neutral-max));
+
+    background-color: hsl(var(--clr-primary));
+    border: 0;
+    border-radius: var(--radius-control);
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        background-color: hsl(var(--clr-shade));
+    }
+}
+
+.pricing__details {
+    margin: 4.8rem 0 clamp(4.8rem, 7vw, 9.6rem);
+
+    text-align: center;
+}
+
+.pricing__features {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(3.2rem, 4.5vw, 6.4rem);
+
+    @media (width <= 59em) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (width <= 34em) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.pricing__icon {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+
+    color: hsl(var(--clr-shade));
+
+    background-color: hsl(var(--clr-cream));
+    border-radius: 50%;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+}
+
+.pricing__feature-title {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(2rem, 2.5vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: hsl(var(--clr-heading));
+}
+
+.pricing__feature-text {
+    font-size: clamp(1.6rem, 1.65vw, 1.8rem);
+    line-height: 1.8;
+}

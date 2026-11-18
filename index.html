@@ -89,11 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a
-                            class="header__link"
-                            role="link"
-                            aria-disabled="true"
-                        >
+                        <a class="header__link" href="#pricing">
                             Pricing
                         </a>
                     </li>
@@ -751,6 +747,156 @@
                     </li>
                 </ul>
             </section>
+
+            <section
+                class="pricing"
+                id="pricing"
+                aria-labelledby="pricing-title"
+                tabindex="-1"
+            >
+                <div class="pricing__inner">
+                    <p class="pricing__eyebrow">Pricing</p>
+                    <h2 class="pricing__title" id="pricing-title">
+                        Eating well without breaking the bank
+                    </h2>
+
+                    <div class="pricing__plans">
+                        <article class="pricing__plan" aria-labelledby="starter-title">
+                            <header class="pricing__plan-heading">
+                                <h3 class="pricing__plan-name" id="starter-title">
+                                    Starter
+                                </h3>
+                                <p class="pricing__price">
+                                    <span class="pricing__currency">$</span>399
+                                </p>
+                                <p class="pricing__price-note">
+                                    per month. That's just $13 per meal!
+                                </p>
+                            </header>
+                            <ul class="pricing__perks" role="list">
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>1 meal per day</span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>Order from 11 am to 9 pm</span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>Delivery is free</span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">×</span>
+                                    <span>No access to the latest recipes</span>
+                                </li>
+                            </ul>
+                            <button
+                                class="pricing__action"
+                                type="button"
+                                aria-disabled="true"
+                                aria-label="Start eating well with Starter"
+                            >
+                                Start eating well
+                            </button>
+                        </article>
+
+                        <article
+                            class="pricing__plan pricing__plan--complete"
+                            aria-labelledby="complete-title"
+                        >
+                            <p class="pricing__ribbon">Best value</p>
+                            <header class="pricing__plan-heading">
+                                <h3 class="pricing__plan-name" id="complete-title">
+                                    Complete
+                                </h3>
+                                <p class="pricing__price">
+                                    <span class="pricing__currency">$</span>649
+                                </p>
+                                <p class="pricing__price-note">
+                                    per month. That's just $11 per meal!
+                                </p>
+                            </header>
+                            <ul class="pricing__perks" role="list">
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span><strong>2</strong> meals per day</span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>Order <strong>24/7</strong></span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>Delivery is free</span>
+                                </li>
+                                <li class="pricing__perk">
+                                    <span class="pricing__mark" aria-hidden="true">✓</span>
+                                    <span>Get access to the latest recipes</span>
+                                </li>
+                            </ul>
+                            <button
+                                class="pricing__action"
+                                type="button"
+                                aria-disabled="true"
+                                aria-label="Start eating well with Complete"
+                            >
+                                Start eating well
+                            </button>
+                        </article>
+                    </div>
+
+                    <p class="pricing__details">
+                        Prices include all applicable taxes. You can cancel at
+                        any time. Both plans include the following:
+                    </p>
+
+                    <ul class="pricing__features" role="list">
+                        <li>
+                            <svg class="pricing__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 12c-2.2-3-4-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2 0 3.8-1.5 6-4.5s4-4.5 6-4.5a4.5 4.5 0 1 1 0 9c-2 0-3.8-1.5-6-4.5Z" />
+                            </svg>
+                            <h3 class="pricing__feature-title">Never cook again!</h3>
+                            <p class="pricing__feature-text">
+                                Our subscriptions cover 365 days per year, even
+                                including major holidays.
+                            </p>
+                        </li>
+                        <li>
+                            <svg class="pricing__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 7c-2.5-3-8-2-8 3.5C4 16 7 21 10 21c1 0 1.5-.5 2-.5s1 .5 2 .5c3 0 6-5 6-10.5C20 5 14.5 4 12 7Zm0 0c0-3 1.5-5 4-5" />
+                            </svg>
+                            <h3 class="pricing__feature-title">Local and organic</h3>
+                            <p class="pricing__feature-text">
+                                Our cooks only use local, fresh, and organic
+                                products to prepare your meals.
+                            </p>
+                        </li>
+                        <li>
+                            <svg class="pricing__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 20c2-7 7-10 12-12M6 16C2 9 9 4 21 3c0 10-4 17-12 15" />
+                            </svg>
+                            <h3 class="pricing__feature-title">No waste</h3>
+                            <p class="pricing__feature-text">
+                                All our partners only use reusable containers to
+                                package all your meals.
+                            </p>
+                        </li>
+                        <li>
+                            <svg class="pricing__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="6" y="4" width="3" height="16" rx="1" />
+                                <rect x="15" y="4" width="3" height="16" rx="1" />
+                            </svg>
+                            <h3 class="pricing__feature-title">Pause anytime</h3>
+                            <p class="pricing__feature-text">
+                                Going on vacation? Just pause your subscription,
+                                and we refund unused days.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
         <footer></footer>
     </body>
