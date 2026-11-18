@@ -20,6 +20,11 @@
         clip-path: inset(50%);
         overflow: hidden;
     }
+
+    @media (width <= 59em) {
+        position: fixed;
+        z-index: 3;
+    }
 }
 
 .header__link--cta,
@@ -46,7 +51,27 @@
     background-color: hsl(var(--clr-cream));
 
     @media (width <= 59em) {
-        min-height: 7.6rem;
+        position: relative;
+        z-index: 2;
+
+        min-height: var(--header-height-mobile);
+    }
+}
+
+.header--sticky {
+    @media (width <= 59em) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        background-color: hsl(var(--clr-neutral-max) / 97%);
+    }
+}
+
+.header--sticky + main {
+    @media (width <= 59em) {
+        padding-top: var(--header-height-mobile);
     }
 }
 

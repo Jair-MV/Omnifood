@@ -32,6 +32,7 @@
     --radius-control: 0.9rem;
     --radius-card: 1.1rem;
 
+    --header-height-mobile: 7.6rem;
     --duration-hover: 0.3s;
 }
 
@@ -52,6 +53,10 @@
 html {
     font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
+
+    @media (width <= 59em) {
+        scroll-padding-top: var(--header-height-mobile);
+    }
 
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;

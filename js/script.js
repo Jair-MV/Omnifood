@@ -1,11 +1,40 @@
 "use strict";
 
+const header = document.querySelector(".header");
+const hero = document.querySelector(".hero");
 const headerToggle = document.querySelector(".header__toggle");
 const headerNav = document.querySelector(".header__nav");
 const mobileLayout = window.matchMedia("(width <= 59em)");
 const background = document.querySelectorAll(
     ".skip-link, .header__brand, main, footer",
 );
+
+let heroObserver;
+
+function observeHero() {
+    heroObserver?.disconnect();
+
+    if (!mobileLayout.matches) {
+        header.classList.remove("header--sticky");
+        return;
+    }
+
+    const headerHeight = header.getBoundingClientRect().height;
+    heroObserver = new IntersectionObserver(
+        ([entry]) => {
+            header.classList.toggle(
+                "header--sticky",
+                mobileLayout.matches &&
+                    !entry.isIntersecting &&
+                    entry.boundingClientRect.bottom <= headerHeight,
+            );
+        },
+        { rootMargin: `-${headerHeight}px 0px 0px 0px` },
+    );
+    heroObserver.observe(hero);
+}
+
+observeHero();
 
 function setMenuOpen(isOpen) {
     headerToggle.setAttribute("aria-expanded", String(isOpen));
@@ -56,6 +85,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 mobileLayout.addEventListener("change", (event) => {
+    observeHero();
+
     if (!event.matches && headerToggle.getAttribute("aria-expanded") === "true") {
         setMenuOpen(false);
         document.querySelector(".header__brand").focus();
