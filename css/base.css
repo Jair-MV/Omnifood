@@ -17,11 +17,16 @@
     --clr-muted: 0 0% 53%;
     --clr-step-number: 0 0% 87%;
     --clr-neutral-max: 0 0% 100%;
+    --clr-neutral-min: 0 0% 0%;
+    --clr-vegetarian: 130 57% 56%;
+    --clr-vegan: 84 69% 51%;
+    --clr-paleo: 47 100% 62%;
 
     --fs-base: 1.6rem;
     --ff-base: Rubik, system-ui, sans-serif;
 
     --radius-control: 0.9rem;
+    --radius-card: 1.1rem;
 }
 
 *,

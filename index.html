@@ -81,13 +81,7 @@
                         </a>
                     </li>
                     <li>
-                        <a
-                            class="header__link"
-                            role="link"
-                            aria-disabled="true"
-                        >
-                            Meals
-                        </a>
+                        <a class="header__link" href="#meals"> Meals </a>
                     </li>
                     <li>
                         <a
@@ -360,6 +354,190 @@
                             </div>
                         </li>
                     </ol>
+                </div>
+            </section>
+
+            <section
+                class="meals"
+                id="meals"
+                aria-labelledby="meals-title"
+                tabindex="-1"
+            >
+                <div class="meals__inner">
+                    <p class="meals__eyebrow">Meals</p>
+                    <h2 class="meals__title" id="meals-title">
+                        Omnifood AI chooses from 5,000+ recipes
+                    </h2>
+
+                    <svg class="meals__icon-defs" aria-hidden="true">
+                        <symbol id="meal-icon-flame" viewBox="0 0 24 24">
+                            <path
+                                d="M12 22c-4 0-7-2.8-7-6.5 0-2.7 1.4-4.4 3.4-6.2-.1 2.1.9 3.2 1.8 3.6C10 9 13.8 6 13 2c4 3 6 8 6 12.5C19 19 16 22 12 22Z"
+                            />
+                        </symbol>
+                        <symbol id="meal-icon-utensils" viewBox="0 0 24 24">
+                            <path
+                                d="M4 3v5a3 3 0 0 0 6 0V3M7 3v18m12 0V3c-2.2 1.8-3.5 4.8-3.5 8.5v1H19"
+                            />
+                        </symbol>
+                        <symbol id="meal-icon-star" viewBox="0 0 24 24">
+                            <path
+                                d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"
+                            />
+                        </symbol>
+                    </svg>
+
+                    <div class="meals__grid">
+                        <article class="meal-card">
+                            <img
+                                class="meal-card__image"
+                                src="assets/meals/meal-1.jpg"
+                                width="700"
+                                height="467"
+                                loading="lazy"
+                                alt="Pan-fried gyozas with sesame seeds"
+                            />
+                            <div class="meal-card__body">
+                                <ul class="meal-card__tags" role="list">
+                                    <li
+                                        class="meal-card__tag meal-card__tag--vegetarian"
+                                    >
+                                        Vegetarian
+                                    </li>
+                                </ul>
+                                <h3 class="meal-card__title">
+                                    Japanese Gyozas
+                                </h3>
+                                <ul class="meal-card__stats" role="list">
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-flame" />
+                                        </svg>
+                                        <span
+                                            ><strong>650</strong> calories</span
+                                        >
+                                    </li>
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-utensils" />
+                                        </svg>
+                                        <span
+                                            >NutriScore &reg;
+                                            <strong>74</strong></span
+                                        >
+                                    </li>
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-star" />
+                                        </svg>
+                                        <span
+                                            ><strong>4.9</strong> rating
+                                            (537)</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="meal-card">
+                            <img
+                                class="meal-card__image"
+                                src="assets/meals/meal-2.jpg"
+                                width="700"
+                                height="467"
+                                loading="lazy"
+                                alt="Avocado salad with fresh vegetables"
+                            />
+                            <div class="meal-card__body">
+                                <ul class="meal-card__tags" role="list">
+                                    <li
+                                        class="meal-card__tag meal-card__tag--vegan"
+                                    >
+                                        Vegan
+                                    </li>
+                                    <li
+                                        class="meal-card__tag meal-card__tag--paleo"
+                                    >
+                                        Paleo
+                                    </li>
+                                </ul>
+                                <h3 class="meal-card__title">Avocado Salad</h3>
+                                <ul class="meal-card__stats" role="list">
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-flame" />
+                                        </svg>
+                                        <span
+                                            ><strong>400</strong> calories</span
+                                        >
+                                    </li>
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-utensils" />
+                                        </svg>
+                                        <span
+                                            >NutriScore &reg;
+                                            <strong>92</strong></span
+                                        >
+                                    </li>
+                                    <li class="meal-card__stat">
+                                        <svg
+                                            class="meal-card__icon"
+                                            aria-hidden="true"
+                                        >
+                                            <use href="#meal-icon-star" />
+                                        </svg>
+                                        <span
+                                            ><strong>4.8</strong> rating
+                                            (441)</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <div class="meals__diets">
+                            <h3 class="meals__diet-title">
+                                Works with any diet
+                            </h3>
+                            <ul class="meals__diet-list" role="list">
+                                <li class="meals__diet">Vegetarian</li>
+                                <li class="meals__diet">Vegan</li>
+                                <li class="meals__diet">Pescatarian</li>
+                                <li class="meals__diet">Gluten-free</li>
+                                <li class="meals__diet">Lactose-free</li>
+                                <li class="meals__diet">Keto</li>
+                                <li class="meals__diet">Paleo</li>
+                                <li class="meals__diet">Low FODMAP</li>
+                                <li class="meals__diet">Kid-friendly</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="meals__recipes">
+                        <a
+                            class="meals__recipe-link"
+                            role="link"
+                            aria-disabled="true"
+                        >
+                            See all recipes <span aria-hidden="true">→</span>
+                        </a>
+                    </p>
                 </div>
             </section>
         </main>

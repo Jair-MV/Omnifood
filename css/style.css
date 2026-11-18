@@ -513,3 +513,208 @@
 
     z-index: 1;
 }
+
+/* ********************************************* */
+/* Meals                                         */
+/* ********************************************* */
+.meals {
+    padding: clamp(4.8rem, 7vw, 9.6rem) 0;
+}
+
+.meals__inner {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 clamp(2rem, 6vw, 3.2rem);
+}
+
+.meals__eyebrow {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    letter-spacing: 0.075rem;
+    text-align: center;
+    color: hsl(var(--clr-shade));
+    text-transform: uppercase;
+}
+
+.meals__title {
+    margin-bottom: clamp(4.8rem, 7vw, 9.6rem);
+
+    font-size: clamp(2.8rem, 4.5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+    text-align: center;
+    color: hsl(var(--clr-heading));
+}
+
+.meals__icon-defs {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+}
+
+.meals__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(3.2rem, 5vw, 6.4rem);
+
+    @media (width <= 59em) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (width <= 34em) {
+        grid-template-columns: minmax(0, 1fr);
+
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+.meal-card {
+    border-radius: var(--radius-card);
+    box-shadow: 0 2.4rem 4.8rem hsl(var(--clr-neutral-min) / 8%);
+
+    transition: transform 0.4s, box-shadow 0.4s;
+    overflow: hidden;
+
+    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+        &:hover {
+            box-shadow: 0 3.2rem 6.4rem hsl(var(--clr-neutral-min) / 6%);
+            transform: translateY(-1.2rem);
+        }
+    }
+}
+
+.meal-card__image {
+    width: 100%;
+    height: auto;
+}
+
+.meal-card__body {
+    padding: 3.2rem clamp(2.4rem, 3.4vw, 4.8rem) 4.8rem;
+}
+
+.meal-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
+    margin-bottom: 1.2rem;
+}
+
+.meal-card__tag {
+    padding: 0.4rem 0.8rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: hsl(var(--clr-heading));
+    text-transform: uppercase;
+
+    border-radius: 10rem;
+}
+
+.meal-card__tag--vegetarian {
+    background-color: hsl(var(--clr-vegetarian));
+}
+
+.meal-card__tag--vegan {
+    background-color: hsl(var(--clr-vegan));
+}
+
+.meal-card__tag--paleo {
+    background-color: hsl(var(--clr-paleo));
+}
+
+.meal-card__title {
+    margin-bottom: 3.2rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: hsl(var(--clr-heading));
+}
+
+.meal-card__stats,
+.meals__diet-list {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.meal-card__stat,
+.meals__diet {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.meal-card__stat strong {
+    font-weight: 500;
+}
+
+.meal-card__icon {
+    flex-shrink: 0;
+
+    width: 2.4rem;
+    height: 2.4rem;
+
+    color: hsl(var(--clr-primary));
+
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+}
+
+.meals__diets {
+    @media (34em < width <= 59em) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+.meals__diet-title {
+    margin-bottom: 3.2rem;
+
+    font-size: clamp(2.2rem, 2.6vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: hsl(var(--clr-heading));
+}
+
+.meals__diet::before {
+    content: "";
+
+    flex-shrink: 0;
+
+    width: 0.8rem;
+    height: 1.5rem;
+    margin: 0 0.8rem 0.4rem;
+
+    color: hsl(var(--clr-primary));
+
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.meals__recipes {
+    margin-top: 4.8rem;
+
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.meals__recipe-link {
+    color: hsl(var(--clr-shade));
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
