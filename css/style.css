@@ -718,3 +718,116 @@
     text-decoration: underline;
     text-underline-offset: 0.4rem;
 }
+
+/* ********************************************* */
+/* Testimonials                                  */
+/* ********************************************* */
+.testimonials {
+    display: grid;
+    grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+    align-items: center;
+    gap: clamp(3.2rem, 4.5vw, 6.4rem);
+
+    background-color: hsl(var(--clr-cream));
+
+    @media (width <= 59em) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.testimonials__content {
+    padding: 6.4rem 0 6.4rem clamp(3.2rem, 4.5vw, 6.4rem);
+
+    @media (width <= 59em) {
+        padding: clamp(4.8rem, 7vw, 6.4rem) clamp(2rem, 6vw, 4.2rem) 0;
+    }
+}
+
+.testimonials__eyebrow {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    letter-spacing: 0.075rem;
+    color: hsl(var(--clr-shade));
+    text-transform: uppercase;
+}
+
+.testimonials__title {
+    margin-bottom: clamp(4.8rem, 6vw, 9.6rem);
+
+    font-size: clamp(2.8rem, 4.5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+    color: hsl(var(--clr-heading));
+}
+
+.testimonials__quotes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4.8rem clamp(2.4rem, 4.2vw, 6rem);
+
+    @media (width <= 34em) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3.2rem;
+    }
+}
+
+.testimonials__portrait {
+    width: 6.4rem;
+    height: auto;
+    margin-bottom: 1.2rem;
+
+    border-radius: 50%;
+}
+
+.testimonials__text {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(1.6rem, 1.65vw, 1.8rem);
+    line-height: 1.8;
+}
+
+.testimonials__name {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: hsl(var(--clr-attribution));
+}
+
+.testimonials__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.8rem, 1.4vw, 1.6rem);
+
+    padding: 1.6rem 1.6rem 1.6rem 0;
+
+    @media (width <= 59em) {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+
+        padding: 0 1.6rem 1.6rem;
+    }
+
+    @media (width <= 34em) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        padding: 0 0.8rem 0.8rem;
+    }
+}
+
+.testimonials__tile {
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: auto;
+
+        @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+            transition: transform 0.4s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
