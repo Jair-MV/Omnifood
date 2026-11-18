@@ -5,13 +5,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Document</title>
+        <title>Omnifood — A healthy meal delivered to your door</title>
 
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="Omnifood delivers healthy meals tailored to your tastes and nutritional needs, every day of the year."
+        />
 
-        <meta name="theme-color" content="" />
+        <meta name="theme-color" content="#e67e22" />
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
 
         <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/base.css" />
@@ -22,11 +32,107 @@
     </head>
 
     <body>
-        <a class="skip-link" href="#contenido">Saltar al contenido</a>
+        <a class="skip-link" href="#content">Skip to content</a>
 
         <header></header>
 
-        <main id="contenido"></main>
+        <main id="content" tabindex="-1">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title" id="hero-title">
+                            A healthy meal delivered to your door, every single
+                            day
+                        </h1>
+                        <p class="hero__description">
+                            The smart 365-days-per-year food subscription that
+                            will make you eat healthy again. Tailored to your
+                            personal tastes and nutritional needs.
+                        </p>
+
+                        <div class="hero__actions">
+                            <!-- Link these CTAs once the sign-up and how-it-works sections exist. -->
+                            <button
+                                class="hero__action hero__action--primary"
+                                type="button"
+                                aria-disabled="true"
+                            >
+                                Start eating well
+                            </button>
+                            <button
+                                class="hero__action hero__action--secondary"
+                                type="button"
+                                aria-disabled="true"
+                            >
+                                Learn more <span aria-hidden="true">↓</span>
+                            </button>
+                        </div>
+
+                        <div class="hero__proof">
+                            <div class="hero__avatars" aria-hidden="true">
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-1.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-2.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-3.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-4.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-5.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                                <img
+                                    class="hero__avatar"
+                                    src="assets/customers/customer-6.jpg"
+                                    width="128"
+                                    height="128"
+                                    alt=""
+                                />
+                            </div>
+                            <p class="hero__proof-text">
+                                <strong class="hero__proof-number"
+                                    >250,000+</strong
+                                >
+                                meals delivered last year!
+                            </p>
+                        </div>
+                    </div>
+
+                    <img
+                        class="hero__image"
+                        src="assets/hero.png"
+                        width="1479"
+                        height="1459"
+                        alt="A woman enjoying a meal beside a collage of prepared dishes"
+                        fetchpriority="high"
+                    />
+                </div>
+            </section>
+        </main>
 
         <footer></footer>
     </body>

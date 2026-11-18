@@ -7,25 +7,18 @@
 */
 
 :root {
-    --clr-base: ;
-
-    --clr-primary: ;
-
-    --clr-secondary: ;
-
-    --clr-neutral-min: 0 0% 0%;
+    --clr-base: 0 0% 33%;
+    --clr-primary: 28 80% 52%;
+    --clr-cream: 27 83% 95%;
+    --clr-shade: 28 74% 47%;
+    --clr-heading: 0 0% 20%;
+    --clr-brown: 28 75% 15%;
     --clr-neutral-max: 0 0% 100%;
 
-    --clr-success: ;
-    --clr-warning: ;
-    --clr-error: ;
-
     --fs-base: 1.6rem;
+    --ff-base: Rubik, system-ui, sans-serif;
 
-    --ff-base: sans-serif;
-    --ff-alt-alpha: ;
-    --ff-alt-beta: ;
-    --ff-icon: ;
+    --radius-control: 0.9rem;
 }
 
 *,
