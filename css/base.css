@@ -1,0 +1,98 @@
+/*
+    Just for debugging purposes
+
+    * {
+        outline: 2px solid red;
+    }
+*/
+
+:root {
+    --clr-base: ;
+
+    --clr-primary: ;
+
+    --clr-secondary: ;
+
+    --clr-neutral-min: 0 0% 0%;
+    --clr-neutral-max: 0 0% 100%;
+
+    --clr-success: ;
+    --clr-warning: ;
+    --clr-error: ;
+
+    --fs-base: 1.6rem;
+
+    --ff-base: sans-serif;
+    --ff-alt-alpha: ;
+    --ff-alt-beta: ;
+    --ff-icon: ;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+
+    @media (prefers-reduced-motion: reduce) {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: hsl(var(--clr-base));
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+select {
+    color: inherit;
+}
+
+textarea {
+    /* Don´t show scroll bars */
+    overflow: auto;
+}
+
+::selection {
+}
+
+:focus-visible {
+}

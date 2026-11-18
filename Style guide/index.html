@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Style Guide | Omnifood</title>
+        <meta
+            name="description"
+            content="Omnifood’s visual identity, typography, and components."
+        />
+        <link rel="icon" href="../assets/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="skip-link" href="#content">Skip to content</a>
+        <header class="page-header">
+            <div class="container">
+                <div class="masthead">
+                    <img
+                        class="wordmark"
+                        src="../assets/omnifood-logo.png"
+                        width="1212"
+                        height="163"
+                        alt="Omnifood"
+                    />
+                    <nav aria-label="Style guide sections">
+                        <ul class="nav-list">
+                            <li><a href="#identity">Identity</a></li>
+                            <li><a href="#typography">Typography</a></li>
+                            <li><a href="#spacing">Spacing</a></li>
+                            <li><a href="#components">Components</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="eyebrow">Omnifood · Web design</p>
+                <h1>Style Guide</h1>
+                <p class="intro">
+                    A visual reference for Omnifood’s landing page. Omnifood
+                    is an AI-powered subscription for personalized, healthy meals.
+                </p>
+            </div>
+        </header>
+
+        <main id="content" class="container" tabindex="-1">
+            <section
+                id="identity"
+                class="section"
+                aria-labelledby="identity-title"
+            >
+                <h2 id="identity-title">Identity and Color</h2>
+                <p class="intro">
+                    Use the logo on light backgrounds. Reserve brand orange for
+                    actions and accents, and use cream tones to distinguish
+                    surfaces. Each swatch lists its original hex code and the
+                    rounded HSL value used in the CSS.
+                </p>
+                <h3 class="note">Brand Palette</h3>
+                <ul class="swatches">
+                    <li class="swatch swatch--primary">
+                        <span class="swatch-label">
+                            Brand Orange · <code>#E67E22</code><br />
+                            <code>hsl(28 80% 52%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--tint-light">
+                        <span class="swatch-label">
+                            Light Cream · <code>#FDF2E9</code><br />
+                            <code>hsl(27 83% 95%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--tint">
+                        <span class="swatch-label">
+                            Cream · <code>#FAE5D3</code><br />
+                            <code>hsl(28 80% 90%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--shade">
+                        <span class="swatch-label">
+                            Dark Orange · <code>#CF711F</code><br />
+                            <code>hsl(28 74% 47%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--shade-dark">
+                        <span class="swatch-label">
+                            Dark Brown · <code>#45260A</code><br />
+                            <code>hsl(28 75% 15%)</code>
+                        </span>
+                    </li>
+                </ul>
+                <h3 class="note">Neutrals</h3>
+                <ul class="swatches">
+                    <li class="swatch swatch--white">
+                        <span class="swatch-label">
+                            White · <code>#FFFFFF</code><br />
+                            <code>hsl(0 0% 100%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--heading">
+                        <span class="swatch-label">
+                            Headings · <code>#333333</code><br />
+                            <code>hsl(0 0% 20%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--body">
+                        <span class="swatch-label">
+                            Body Text · <code>#555555</code><br />
+                            <code>hsl(0 0% 33%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--muted">
+                        <span class="swatch-label">
+                            Muted Text · <code>#6F6F6F</code><br />
+                            <code>hsl(0 0% 44%)</code>
+                        </span>
+                    </li>
+                    <li class="swatch swatch--muted-light">
+                        <span class="swatch-label">
+                            Medium Gray · <code>#767676</code><br />
+                            <code>hsl(0 0% 46%)</code>
+                        </span>
+                    </li>
+                </ul>
+                <p class="note">
+                    <strong>Contrast:</strong> The original button used white
+                    text on orange (<strong>2.85:1</strong>), below the WCAG AA
+                    minimum of 4.5:1 for normal text. This guide uses dark brown
+                    text on orange (about <strong>4.9:1</strong>). Dark orange
+                    on white also falls short of AA for normal text.
+                </p>
+            </section>
+
+            <section
+                id="typography"
+                class="section"
+                aria-labelledby="typography-title"
+            >
+                <h2 id="typography-title">Typography</h2>
+                <p class="intro">
+                    <strong>Rubik</strong> in weights 400, 500, 600, and 700.
+                    The heading sizes shown are for desktop.
+                </p>
+                <div class="specimen">
+                    <p class="specimen-meta">
+                        Main Headline · 5.2 rem / 1.05 · 700
+                    </p>
+                    <p class="type-display">
+                        A healthy meal delivered to your door, every single day
+                    </p>
+                </div>
+                <div class="specimen">
+                    <p class="specimen-meta">
+                        Section Heading · 4.4 rem / 1.2 · 700
+                    </p>
+                    <p class="type-heading">
+                        Your daily dose of health in 3 simple steps
+                    </p>
+                </div>
+                <div class="specimen">
+                    <p class="specimen-meta">Subheading · 3 rem / 1.2 · 700</p>
+                    <p class="type-subheading">
+                        Approve your weekly meal plan
+                    </p>
+                </div>
+                <div class="specimen">
+                    <p class="specimen-meta">Body Text · 1.6 rem / 1.6 · 400</p>
+                    <p>
+                        Tailored to your personal tastes and nutritional needs.
+                    </p>
+                </div>
+            </section>
+
+            <section
+                id="spacing"
+                class="section"
+                aria-labelledby="spacing-title"
+            >
+                <h2 id="spacing-title">Spacing and Border Radius</h2>
+                <p class="intro">
+                    The original spacing scale is shown in pixels at a root
+                    font size of 10 px. The border radius is 0.9 rem for
+                    controls and 1.1 rem for cards.
+                </p>
+                <ul class="spacing">
+                    <li>
+                        <span class="measure measure--2"></span>2 px
+                    </li>
+                    <li>
+                        <span class="measure measure--4"></span>4 px
+                    </li>
+                    <li>
+                        <span class="measure measure--8"></span>8 px
+                    </li>
+                    <li>
+                        <span class="measure measure--12"></span>12
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--16"></span>16
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--24"></span>24
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--32"></span>32
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--48"></span>48
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--64"></span>64
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--80"></span>80 px
+                    </li>
+                    <li>
+                        <span class="measure measure--96"></span>96
+                        px
+                    </li>
+                    <li>
+                        <span class="measure measure--128"></span>128
+                        px
+                    </li>
+                </ul>
+            </section>
+
+            <section
+                id="components"
+                class="section"
+                aria-labelledby="components-title"
+            >
+                <h2 id="components-title">Components</h2>
+                <div class="grid">
+                    <div>
+                        <div class="panel">
+                            <h3>Buttons and Links</h3>
+                            <p>
+                                Hover over the examples or press Tab to see
+                                their interaction states. The buttons are for
+                                demonstration only.
+                            </p>
+                            <div class="examples">
+                                <button class="button" type="button">
+                                    Primary Action
+                                </button>
+                                <button
+                                    class="button button--secondary"
+                                    type="button"
+                                >
+                                    Secondary Action
+                                </button>
+                                <button class="button" type="button" disabled>
+                                    Disabled
+                                </button>
+                                <a href="#photography">View Photography</a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h3>Form Fields</h3>
+                            <div class="field">
+                                <label for="email">Email Address</label>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="name@example.com"
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="dietary-preference"
+                                    >Dietary Preference</label
+                                >
+                                <select id="dietary-preference">
+                                    <option value="">Choose an option</option>
+                                    <option>Vegetarian</option>
+                                    <option>Vegan</option>
+                                    <option>Paleo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Dietary Tags</h3>
+                        <ul class="tags">
+                            <li class="tag tag--vegetarian">
+                                Vegetarian
+                            </li>
+                            <li class="tag tag--vegan">
+                                Vegan
+                            </li>
+                            <li class="tag tag--paleo">
+                                Paleo
+                            </li>
+                        </ul>
+                        <p class="specimen-meta">
+                            <code>#51CF66</code> · <code>#94D82D</code> ·
+                            <code>#FFD43B</code>
+                        </p>
+                        <article class="meal" aria-labelledby="meal-title">
+                            <img
+                                src="../assets/meals/meal-1.jpg"
+                                width="700"
+                                height="467"
+                                loading="lazy"
+                                alt="Pan-fried gyozas with sesame seeds"
+                            />
+                            <div class="meal-content">
+                                <ul class="tags">
+                                    <li class="tag tag--vegetarian">
+                                        Vegetarian
+                                    </li>
+                                </ul>
+                                <h3 id="meal-title">Japanese Gyozas</h3>
+                                <ul class="meal-details">
+                                    <li>650 calories</li>
+                                    <li>NutriScore: 74</li>
+                                    <li>4.9 out of 5 (537 reviews)</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="photography"
+                class="section"
+                aria-labelledby="photography-title"
+            >
+                <h2 id="photography-title">Photography</h2>
+                <div class="grid">
+                    <figure class="photo photo--product">
+                        <img
+                            src="../assets/hero.png"
+                            width="1479"
+                            height="1459"
+                            loading="lazy"
+                            alt="Collage of prepared meals and a person enjoying their food"
+                        />
+                        <figcaption>
+                            <strong>Hero Image:</strong> Keep the full collage
+                            so viewers can see both the meals and someone
+                            enjoying them.
+                        </figcaption>
+                    </figure>
+                    <figure class="photo photo--lifestyle">
+                        <img
+                            src="../assets/eating.jpg"
+                            width="800"
+                            height="1000"
+                            loading="lazy"
+                            alt="A woman enjoying a meal"
+                        />
+                        <figcaption>
+                            <strong>Lifestyle Photography:</strong> Show people
+                            enjoying their meals. Keep both the face and the
+                            plate visible when cropping.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
