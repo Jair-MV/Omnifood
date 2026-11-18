@@ -1161,6 +1161,38 @@
     }
 }
 
+.cta__select {
+    position: relative;
+
+    min-width: 0;
+
+    & select {
+        @media (forced-colors: none) {
+            padding-right: 3.6rem;
+
+            appearance: none;
+        }
+    }
+}
+
+.cta__select-icon {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+
+    display: none;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    pointer-events: none;
+    transform: translateY(-50%);
+
+    @media (forced-colors: none) {
+        display: block;
+    }
+}
+
 .cta__submit {
     align-self: end;
 
