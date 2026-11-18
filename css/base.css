@@ -97,7 +97,12 @@ textarea {
 }
 
 ::selection {
+    color: hsl(var(--clr-brown-dark));
+
+    background-color: hsl(var(--clr-primary));
 }
 
 :focus-visible {
+    outline: 2px solid hsl(var(--clr-brown-dark));
+    outline-offset: 3px;
 }
