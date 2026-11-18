@@ -1,6 +1,7 @@
 "use strict";
 
 const headerToggle = document.querySelector(".header__toggle");
+const headerNav = document.querySelector(".header__nav");
 const mobileLayout = window.matchMedia("(width <= 59em)");
 const background = document.querySelectorAll(
     ".skip-link, .header__brand, main, footer",
@@ -12,18 +13,21 @@ function setMenuOpen(isOpen) {
         "aria-label",
         isOpen ? "Close navigation" : "Open navigation",
     );
+    headerNav.inert = mobileLayout.matches && !isOpen;
 
     background.forEach((element) => {
         element.inert = isOpen;
     });
 }
 
+headerNav.inert = mobileLayout.matches;
+
 headerToggle.addEventListener("click", () => {
     const isOpen = headerToggle.getAttribute("aria-expanded") === "true";
     setMenuOpen(!isOpen);
 });
 
-document.querySelector(".header__nav").addEventListener("click", (event) => {
+headerNav.addEventListener("click", (event) => {
     const link = event.target.closest('a[href^="#"]');
 
     if (
@@ -55,6 +59,11 @@ mobileLayout.addEventListener("change", (event) => {
     if (!event.matches && headerToggle.getAttribute("aria-expanded") === "true") {
         setMenuOpen(false);
         document.querySelector(".header__brand").focus();
+    } else {
+        const navHadFocus = headerNav.contains(document.activeElement);
+        headerNav.inert = event.matches;
+
+        if (event.matches && navHadFocus) headerToggle.focus();
     }
 });
 
