@@ -2,7 +2,6 @@
 *.sketch
 *.fig
 *.xd
-/reference/
 
 # Dependencies
 /node_modules
