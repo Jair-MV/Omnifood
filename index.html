@@ -96,8 +96,7 @@
                     <li>
                         <a
                             class="header__link header__link--cta"
-                            role="link"
-                            aria-disabled="true"
+                            href="#cta"
                         >
                             Try for free
                         </a>
@@ -121,14 +120,12 @@
                         </p>
 
                         <div class="hero__actions">
-                            <!-- Link the primary CTA once the sign-up section exists. -->
-                            <button
+                            <a
                                 class="hero__action hero__action--primary"
-                                type="button"
-                                aria-disabled="true"
+                                href="#cta"
                             >
                                 Start eating well
-                            </button>
+                            </a>
                             <a
                                 class="hero__action hero__action--secondary"
                                 href="#how-it-works"
@@ -791,14 +788,13 @@
                                     <span>No access to the latest recipes</span>
                                 </li>
                             </ul>
-                            <button
+                            <a
                                 class="pricing__action"
-                                type="button"
-                                aria-disabled="true"
+                                href="#cta"
                                 aria-label="Start eating well with Starter"
                             >
                                 Start eating well
-                            </button>
+                            </a>
                         </article>
 
                         <article
@@ -835,14 +831,13 @@
                                     <span>Get access to the latest recipes</span>
                                 </li>
                             </ul>
-                            <button
+                            <a
                                 class="pricing__action"
-                                type="button"
-                                aria-disabled="true"
+                                href="#cta"
                                 aria-label="Start eating well with Complete"
                             >
                                 Start eating well
-                            </button>
+                            </a>
                         </article>
                     </div>
 
@@ -894,6 +889,83 @@
                             </p>
                         </li>
                     </ul>
+                </div>
+            </section>
+
+            <section
+                class="cta"
+                id="cta"
+                aria-labelledby="cta-title"
+                tabindex="-1"
+            >
+                <div class="cta__panel">
+                    <div class="cta__content">
+                        <h2 class="cta__title" id="cta-title">
+                            Get your first meal for free!
+                        </h2>
+                        <p class="cta__description">
+                            Healthy, tasty and hassle-free meals are waiting for
+                            you. Start eating well today. You can cancel or pause
+                            anytime. And the first meal is on us!
+                        </p>
+
+                        <form class="cta__form" method="post">
+                            <div class="cta__field">
+                                <label for="full-name">Full name</label>
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    autocomplete="name"
+                                    placeholder="John Smith"
+                                    required
+                                />
+                            </div>
+
+                            <div class="cta__field">
+                                <label for="email">Email address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    placeholder="me@example.com"
+                                    required
+                                />
+                            </div>
+
+                            <div class="cta__field">
+                                <label for="referral">Where did you hear about us?</label>
+                                <select id="referral" name="referral">
+                                    <option value="">Please choose an option:</option>
+                                    <option value="friends">Friends and family</option>
+                                    <option value="youtube">YouTube video</option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value="ad">Facebook ad</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <button class="cta__submit" type="submit" disabled>
+                                Sign up now
+                            </button>
+                        </form>
+                        <p class="cta__status" role="status"></p>
+                        <noscript>
+                            <p class="cta__status">Sign-up is not available here.</p>
+                        </noscript>
+                    </div>
+
+                    <div class="cta__visual">
+                        <img
+                            class="cta__image"
+                            src="assets/eating.jpg"
+                            alt="Woman enjoying a meal"
+                            width="800"
+                            height="1000"
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
             </section>
         </main>

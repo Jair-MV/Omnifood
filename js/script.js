@@ -57,3 +57,14 @@ mobileLayout.addEventListener("change", (event) => {
         document.querySelector(".header__brand").focus();
     }
 });
+
+const signupForm = document.querySelector(".cta__form");
+const signupStatus = document.querySelector(".cta__status");
+
+signupForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    signupStatus.textContent =
+        "Online sign-up is not available yet. Your details were not sent.";
+});
+
+signupForm.querySelector(".cta__submit").disabled = false;
