@@ -68,3 +68,5 @@ signupForm.addEventListener("submit", (event) => {
 });
 
 signupForm.querySelector(".cta__submit").disabled = false;
+
+document.querySelector(".footer__year").textContent = new Date().getFullYear();
