@@ -31,6 +31,8 @@
 
     --radius-control: 0.9rem;
     --radius-card: 1.1rem;
+
+    --duration-hover: 0.3s;
 }
 
 *,
